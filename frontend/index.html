@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Inventory System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Product Inventory System</h1>
+
+        <!-- Add Product -->
+        <section class="card">
+
+            <h2>Add Product</h2>
+
+            <form id="productForm">
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="productBalance"
+                    placeholder="Initial Balance"
+                    min="0"
+                    required
+                >
+
+                <button type="submit">
+                    Add Product
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Products -->
+        <section class="card">
+
+            <h2>Products</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Balance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productsTableBody">
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Balance -->
+        <section class="card">
+
+            <h2>Balance Operation</h2>
+
+            <select id="productSelect">
+                <option value="">
+                    Select Product
+                </option>
+            </select>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Amount"
+                min="1"
+            >
+
+            <div class="buttons">
+
+                <button id="addBalanceBtn">
+                    Add Balance
+                </button>
+
+                <button id="withdrawBalanceBtn">
+                    Withdraw
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

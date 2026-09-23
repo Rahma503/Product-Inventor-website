@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://product-inventor-website.onrender.com/api/products";
 
 const productForm =
     document.getElementById("productForm");

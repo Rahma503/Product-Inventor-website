@@ -88,3 +88,164 @@ td {
     text-align: center;
     font-weight: bold;
 }
+
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f4f6f8;
+}
+
+.container {
+width: 90%;
+max-width: 1000px;
+margin: 40px auto;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.card {
+background: white;
+padding: 20px;
+margin-bottom: 25px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+margin-top: 0;
+}
+
+form {
+display: flex;
+gap: 10px;
+}
+
+input,
+select {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 15px;
+}
+
+form input {
+flex: 1;
+}
+
+button {
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background: #333;
+color: white;
+font-size: 14px;
+}
+
+button:hover {
+opacity: 0.85;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+padding: 12px;
+text-align: center;
+border-bottom: 1px solid #ddd;
+}
+
+.actions {
+display: flex;
+gap: 5px;
+justify-content: center;
+}
+
+.buttons {
+margin-top: 15px;
+display: flex;
+gap: 10px;
+}
+
+#message {
+text-align: center;
+font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+.container {
+    width: 95%;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+form {
+    flex-direction: column;
+}
+
+form input,
+form button {
+    width: 100%;
+}
+
+/* Make table scrollable on small screens */
+.card:nth-of-type(2) {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 600px;
+}
+
+th,
+td {
+    padding: 10px 8px;
+    font-size: 14px;
+}
+
+.actions {
+    flex-direction: column;
+}
+
+.actions button {
+    width: 100%;
+}
+
+.buttons {
+    flex-direction: column;
+}
+
+.buttons button {
+    width: 100%;
+}
+
+select,
+#amount {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+}
